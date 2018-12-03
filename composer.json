@@ -1,0 +1,47 @@
+{
+    "name": "boarrd/twitter",
+    "description": "A Twitter feed for Boarrd",
+    "keywords": [
+        "boarrd"
+    ],
+    "homepage": "https://github.com/boarrd/twitter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Piedrafita",
+            "email": "soy@miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "spatie/valuestore": "^1.1",
+        "spatie/laravel-twitter-streaming-api": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boarrd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Boarrd\\Twitter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Boarrd\\Twitter\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
